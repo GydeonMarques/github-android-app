@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#161B22</color>
+    <color name="colorOnPrimary">#90161B22</color>
+    <color name="colorPrimaryVariant">#80161B22</color>
+
+    <color name="colorSecondary">#2EA043</color>
+    <color name="colorOnSecondary">#902EA043</color>
+    <color name="colorSecondaryVariant">#802EA043</color>
+
+    <color name="black">#343439</color>
+    <color name="white">#FFFFFF</color>
+    <color name="amber">#df9214</color>
+    <color name="blue_dark">#4777ae</color>
+    <color name="gray_light">#7E7D7D</color>
+    <color name="gray_dark">#565B60</color>
+    <color name="gray_alpha">#50565B60</color>
+    <color name="gray_light_1">#C3C3C3</color>
+    <color name="gray_alpha_1">#15161B22</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#565B60</color>
+
+</resources>

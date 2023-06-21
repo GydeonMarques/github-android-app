@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Base theme-->
+    <style name="Theme.GitHubApp" parent="Base.Theme.GitHubApp">
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="materialButtonStyle">@style/Button.Style</item>
+    </style>
+
+    <!--Theme TextInputLayout -->
+    <style name="TextInputLayout.Theme" parent="ThemeOverlay.Material3">
+        <item name="colorPrimary">?attr/colorControlNormal</item>
+    </style>
+
+    <!--Style TextInputLayout -->
+    <style name="TextInputLayout.Style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="theme">@style/TextInputLayout.Theme</item>
+        <item name="boxStrokeWidth">@dimen/divider_small</item>
+        <item name="startIconTint">?attr/colorControlNormal</item>
+        <item name="boxStrokeColor">?attr/colorControlNormal</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_medium</item>
+        <item name="android:textColorHint">?attr/colorControlNormal</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_medium</item>
+    </style>
+
+    <!--Style TextInputEditText -->
+    <style name="TextInputEditText.Style" parent="Widget.Design.TextInputEditText">
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textColorHint">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/text_body_medium</item>
+        <item name="colorPrimary">?attr/colorControlNormal</item>
+    </style>
+
+
+    <!-- CircleImage style-->
+    <style name="ImageView.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- ActionBar style -->
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleCentered">true</item>
+        <item name="subtitleCentered">true</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="navigationIcon">@drawable/ic_arrow_back</item>
+        <item name="android:background">@drawable/background_bottom_round</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="Button.Style" parent="Widget.MaterialComponents.Button">
+        <item name="textAllCaps">false</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">@dimen/text_body_medium</item>
+        <item name="materialThemeOverlay">@style/Button.Style.GreenThemeOverlay</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="Button.Style.GreenThemeOverlay">
+        <item name="colorOnSurface">?attr/colorControlNormal</item>
+        <item name="colorPrimary">?attr/colorSecondary</item>
+    </style>
+
+    <!-- Text styles -->
+    <style name="TextView.Title.Large" parent="TextAppearance.Material3.TitleLarge">
+        <item name="maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/title_text_large</item>
+    </style>
+
+
+    <style name="TextView.Title.Small" parent="TextAppearance.Material3.TitleSmall">
+        <item name="maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/title_text_small</item>
+    </style>
+
+    <style name="TextView.Title.Medium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/title_text_medium</item>
+    </style>
+
+    <style name="TextView.Subtitle.Large" parent="TextAppearance.Material3.TitleLarge">
+        <item name="maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/subtitle_text_large</item>
+    </style>
+
+    <style name="TextView.Subtitle.Medium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/subtitle_text_medium</item>
+    </style>
+
+    <style name="TextView.Subtitle.Small" parent="TextAppearance.Material3.TitleSmall">
+        <item name="maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/subtitle_text_small</item>
+    </style>
+
+    <style name="TextView.Body.Large" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/text_body_large</item>
+    </style>
+
+    <style name="TextView.Body.Medium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/text_body_medium</item>
+    </style>
+
+    <style name="TextView.Body.Small" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textSize">@dimen/text_body_small</item>
+    </style>
+
+</resources>
