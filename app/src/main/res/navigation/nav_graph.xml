@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/user_list_fragment">
+
+    <fragment
+        android:id="@+id/user_list_fragment"
+        android:name="br.com.gms.github.presentation.userList.fragment.UserListFragment"
+        android:label="@string/users"
+        tools:layout="@layout/fragment_user_list">
+
+    </fragment>
+
+</navigation>

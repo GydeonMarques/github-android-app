@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Git Hub</string>
+    <string name="users">Usuários</string>
+    <string name="search_user">Pesquisar usuário\n</string>
 </resources>
