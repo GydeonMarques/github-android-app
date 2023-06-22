@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_repository_forks"
+        style="@style/TextView.Body.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/padding_small"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/amber"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_git"
+        app:drawableTint="@color/amber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1200" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_repository_rates"
+        style="@style/TextView.Body.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:drawablePadding="@dimen/padding_small"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/amber"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:drawableTint="@color/amber"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_repository_forks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/text_view_repository_forks"
+        app:layout_constraintTop_toTopOf="@id/text_view_repository_forks"
+        tools:text="52000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

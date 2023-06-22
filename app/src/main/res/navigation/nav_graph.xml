@@ -19,7 +19,6 @@
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 
-
     <fragment
         android:id="@+id/user_info_fragment"
         android:name="br.com.gms.github.presentation.userInfo.fragment.UserInfoFragment"
@@ -30,6 +29,30 @@
             android:name="username"
             app:argType="string" />
 
+        <action
+            android:id="@+id/go_to_user_repositories"
+            app:destination="@id/repository_list_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/repository_list_fragment"
+        android:name="br.com.gms.github.presentation.userRepositories.fragment.UserRepositoryListFragment"
+        android:label="@string/user_repositories"
+        tools:layout="@layout/fragment_user_repository_list">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="login"
+            app:argType="string" />
+        <argument
+            android:name="avatarUrl"
+            app:argType="string" />
     </fragment>
 
 </navigation>
