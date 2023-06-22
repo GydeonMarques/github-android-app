@@ -73,7 +73,12 @@ class UserRepositoryListFragment : Fragment() {
     private fun setActions() {
         repositoryListAdapter.apply {
             addOnItemClickListener {
-                //TODO - Implements
+                navController.navigate(
+                    UserRepositoryListFragmentDirections.goToPullRequestOfRepository(
+                        it.owner.login,
+                        it.name
+                    ),
+                )
             }
         }
     }
