@@ -8,6 +8,8 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import br.com.gms.github.core.util.image.loadImageByUrl
 import br.com.gms.github.databinding.FragmentUserInfoBinding
@@ -20,6 +22,7 @@ class UserInfoFragment : Fragment() {
     private val args by navArgs<UserInfoFragmentArgs>()
     private lateinit var binding: FragmentUserInfoBinding
     private val viewModel by viewModels<UserInfoViewModel>()
+    private val navController: NavController by lazy { findNavController() }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -96,7 +99,13 @@ class UserInfoFragment : Fragment() {
                 }
 
                 buttonViewRepositories.setOnClickListener {
-                    //TODO - Implements
+                    navController.navigate(
+                        UserInfoFragmentDirections.goToUserRepositories(
+                            data.name,
+                            data.login,
+                            data.avatarUrl
+                        )
+                    )
                 }
             }
         }
