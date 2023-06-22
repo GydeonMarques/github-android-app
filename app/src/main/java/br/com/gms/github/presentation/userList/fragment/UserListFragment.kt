@@ -9,6 +9,8 @@ import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import br.com.gms.github.core.util.paging.PagingLoadStateAdapter
 import br.com.gms.github.databinding.FragmentUserListBinding
@@ -25,6 +27,7 @@ class UserListFragment : Fragment() {
     private var lastSearchedText: String? = null
     private lateinit var binding: FragmentUserListBinding
     private val viewModel by viewModels<UserListViewModel>()
+    private val navController: NavController by lazy { findNavController() }
     private val gitUsersAdapter: UserListAdapter by lazy { UserListAdapter() }
 
     override fun onCreateView(
@@ -85,6 +88,14 @@ class UserListFragment : Fragment() {
                         }
                     }
                 }
+            }
+
+            gitUsersAdapter.addOnItemClickListener { model ->
+                navController.navigate(
+                    UserListFragmentDirections.goToUserInfo(
+                        model.login
+                    )
+                )
             }
         }
     }

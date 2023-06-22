@@ -8,4 +8,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface GitUsersRepository {
     suspend fun getUsers(request: PageParamsRequest): Flow<PagingData<GitUserDomain>>
+    suspend fun getUserInfo(username: String): Result<GitUserDomain>
 }

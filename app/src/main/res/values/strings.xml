@@ -3,4 +3,5 @@
     <string name="users">Usuários</string>
     <string name="search_user">Pesquisar usuário\n</string>
     <string name="view_repositories">Visualizar repositórios</string>
+    <string name="info">Informações do usuário</string>
 </resources>
