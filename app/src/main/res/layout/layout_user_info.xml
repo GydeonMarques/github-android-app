@@ -1,0 +1,111 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_medium"
+    tools:context="br.com.gms.github.presentation.userInfo.fragment.UserInfoFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_view_user"
+        android:layout_width="@dimen/user_avatar_large"
+        android:layout_height="@dimen/user_avatar_large"
+        android:src="@drawable/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ImageView.Circle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_name"
+        style="@style/TextView.Title.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_user"
+        tools:text="Gideon Marques da Silva" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_login"
+        style="@style/TextView.Subtitle.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_name"
+        tools:text="GideonMarques" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_bio"
+        style="@style/TextView.Subtitle.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_login"
+        tools:text="Developer Android | Java | Koltin" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_location"
+        style="@style/TextView.Subtitle.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableStart="@drawable/ic_location"
+        android:gravity="center"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_bio"
+        tools:text="Goiás - Brasil" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_email"
+        style="@style/TextView.Subtitle.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="@dimen/padding_small"
+        android:gravity="center"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_location"
+        tools:text="gideonmarquesdasilva@gmail.com" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_blog"
+        style="@style/TextView.Subtitle.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:autoLink="web"
+        android:gravity="center"
+        android:textColorLink="@color/blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_email"
+        tools:text="https://github.com/GydeonMarques" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_view_repositories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/view_repositories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_blog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
