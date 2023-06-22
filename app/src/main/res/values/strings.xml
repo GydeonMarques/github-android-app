@@ -6,4 +6,6 @@
     <string name="info">Informações do usuário</string>
     <string name="user_repositories">Repositórios do usuário</string>
     <string name="undefined">N/A</string>
+    <string name="create_at">Criado em: %s</string>
+    <string name="pull_requests">Pull Request</string>
 </resources>

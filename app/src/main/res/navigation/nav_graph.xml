@@ -53,6 +53,26 @@
         <argument
             android:name="avatarUrl"
             app:argType="string" />
+        <action
+            android:id="@+id/go_to_pull_request_of_repository"
+            app:destination="@id/user_repository_pull"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_repository_pull"
+        android:name="br.com.gms.github.presentation.userPullRequests.fragment.UserPullRequestFragment"
+        android:label="@string/pull_requests"
+        tools:layout="@layout/fragment_user_pull_request">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="repositoryName"
+            app:argType="string" />
     </fragment>
 
 </navigation>
