@@ -1,6 +1,13 @@
 # GitHub App
 Ao criar esse aplicativo, utilizei as seguintes tecnologias e padrões: MVVM, ViewBinding, Navigation, Paging, Retrofit, Flow, Modularização, Design Patterns, SOLID, Injeção de Dependência (DI) e Clean Arquicteture.
 
+## Screenshots
+<img src="screenshots/loading.png" width="230" alt="Carregando...">|
+<img src="screenshots/user_list_screen.png" width="230" alt="Lista de usuários">|
+<img src="screenshots/user_info_screen.png" width="230" alt="Informações do usuário">|
+<img src="screenshots/user_repositories_screen.png" width="230" alt="Repositórios do usuário">|
+<img src="screenshots/user_pull_request_screen.png" width="230" alt="Solicitações de pull requests">|
+
 ## Tecnologias Utilizadas
 A arquitetura MVVM (Model-View-ViewModel) serviu como a base sólida para o desenvolvimento do aplicativo. Com a separação clara entre modelos, visualizações e modelos de visualização, pudemos obter uma estrutura organizada e de fácil manutenção. O MVVM também facilitou a implementação do padrão de fluxo de dados unidirecional, proporcionando um código mais previsível e escalável.
 
